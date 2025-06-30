@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_vande"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Vấn đề bảo mật Android" />
+        <item
+            android:id="@+id/nav_kythuat"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Kỹ thuật bảo mật Android" />
+        <item
+            android:id="@+id/nav_ungdung"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Bảo mật ứng dụng" />
+        <item
+            android:id="@+id/nav_dulieu"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Bảo mật dữ liệu người dùng" />
+        <item
+            android:id="@+id/nav_giaotiep"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Bảo mật giao tiếp hệ thống" />
+
+    </group>
+</menu>

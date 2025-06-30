@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.chuong10.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_dulieu"
+        android:name="com.example.chuong10.ui.dulieu.DulieuFragment"
+        android:label="Dữ liệu"
+        tools:layout="@layout/fragment_dulieu" />
+
+    <fragment
+        android:id="@+id/nav_giaotiep"
+        android:name="com.example.chuong10.ui.giaotiep.GiaotiepFragment"
+        android:label="Giao tiếp"
+        tools:layout="@layout/fragment_giaotiep" />
+
+    <fragment
+        android:id="@+id/nav_ungdung"
+        android:name="com.example.chuong10.ui.ungdung.UngdungFragment"
+        android:label="Kỹ thuật"
+        tools:layout="@layout/fragment_ungdung" />
+
+    <fragment
+        android:id="@+id/nav_vande"
+        android:name="com.example.chuong10.ui.vande.VandeFragment"
+        android:label="Vấn đề"
+        tools:layout="@layout/fragment_vande" />
+</navigation>
