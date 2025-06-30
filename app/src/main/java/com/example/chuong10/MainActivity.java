@@ -18,7 +18,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.chuong10.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class git init
+        git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/Minkvux/LTTBD_CHUONG_10.git
+git branch -M main
+git push -u origin main
+MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
