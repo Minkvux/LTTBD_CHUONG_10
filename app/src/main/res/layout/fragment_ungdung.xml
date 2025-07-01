@@ -1,13 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ungdung.UngdungFragment">
+    android:padding="16dp">
 
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <TextView
+            android:text="10.2.1 Bảo mật ứng dụng"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Bảo mật ứng dụng liên quan đến việc bảo vệ mã nguồn, dữ liệu và quyền truy cập của ứng dụng khỏi các hành vi độc hại và tấn công từ bên ngoài."
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Các phương pháp bảo mật ứng dụng:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="• Obfuscation (Làm rối mã): Là kỹ thuật lập trình làm cho mã nguồn trở nên khó đọc nhằm ngăn chặn việc đảo ngược mã và ẩn thông tin nhạy cảm."
+            android:textSize="15sp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="  → Mục tiêu: Giảm nguy cơ bị tấn công, ẩn mã độc, và làm rối cấu trúc mã để gây khó khăn cho hacker."
+            android:textSize="15sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="• ProGuard / R8: Là công cụ tối ưu hóa và làm rối mã nguồn. R8 có hiệu suất tốt hơn, tích hợp tốt với Android build system và tương thích cấu hình ProGuard."
+            android:textSize="15sp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="• Digital Signature (Chữ ký số): Giúp xác thực danh tính nhà phát triển. Mọi ứng dụng Android đều phải được ký số khi phát hành."
+            android:textSize="15sp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="• Tamper Detection (Phát hiện sửa đổi): Kiểm tra tính toàn vẹn của ứng dụng để phát hiện các thay đổi trái phép."
+            android:textSize="15sp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="• Permission Management (Quản lý quyền truy cập): Chỉ yêu cầu quyền cần thiết để giảm thiểu nguy cơ bị lạm dụng hoặc khai thác."
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
