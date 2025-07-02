@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dulieu.SecurityUserActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:text="Bảo mật dữ liệu người dùng"
+            android:layout_gravity="center"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu trữ an toàn:\n
+- Internal Storage: Là nơi tốt nhất để lưu trữ dữ liệu nhạy cảm mà chỉ ứng dụng đó mới có thể truy cập. Dữ liệu ở đây mặc định ở chế độ MODE_PRIVATE.\n
+- SharedPreferences: Thích hợp để lưu trữ các cặp khóa-giá trị nhỏ, riêng tư. Cũng nên sử dụng ở chế độ MODE_PRIVATE.\n
+- SQLite Database: Dành cho dữ liệu có cấu trúc. Đối với dữ liệu nhạy cảm, cơ sở dữ liệu SQLite nên được mã hóa bằng các thư viện như SQLCipher hoặc được mã hóa thủ công từng trường dữ liệu.
+"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kỹ thuật mã hóa:\n
+- Mã hóa dữ liệu nhạy cảm: Sử dụng các thuật toán mã hóa mạnh như AES (Advanced Encryption Standard) cho dữ liệu đối xứng (symmetric encryption) và RSA (Rivest–Shamir–Adleman) cho dữ liệu bất đối xứng (asymmetric encryption).\n
+- Lưu khóa trong Android Keystore: Android Keystore là một hệ thống lưu trữ an toàn cho các khóa mã hóa. Các khóa được lưu trữ tại đây rất khó bị truy cập bởi các ứng dụng khác hoặc ngay cả khi thiết bị bị root, giúp tăng cường bảo mật cho các khóa mã hóa.
+"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Để mã hóa dữ liệu sử dụng Android Keystore API: Android Keystore API cung cấp một cách an toàn để lưu trữ khóa mã hóa và thực hiện các hoạt động mã hóa/giải mã. Quy trình của Android Keystore API:\n
+- Tạo khóa: Sử dụng KeyGenerator hoặc KeyPairGenerator để tạo khóa bí mật hoặc cặp khóa công khai/riêng tư.\n
+- Lưu trữ khóa: Lưu trữ khóa trong Keystore để bảo vệ chúng khỏi truy cập không được phép.\n
+- Mã hóa: Sử dụng Cipher để mã hóa dữ liệu với khóa đã tạo.\n
+- Giải mã: Sử dụng Cipher để giải mã dữ liệu đã mã hóa.
+"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xác thực sinh trắc học:\n
+Sử dụng API Biometric (ví dụ: BiometricPrompt trên Android 9 trở lên) để tích hợp xác thực bằng vân tay hoặc nhận diện khuôn mặt.\n
+Điều này giúp tăng cường bảo mật cho các giao dịch nhạy cảm hoặc truy cập vào các phần quan trọng của ứng dụng mà không cần người dùng phải nhập mật khẩu.
+"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
