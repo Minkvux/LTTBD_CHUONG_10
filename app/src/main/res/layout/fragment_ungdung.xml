@@ -55,12 +55,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="153dp"
+            android:src="@drawable/proguard"/>
+
         <TextView
             android:text="• Digital Signature (Chữ ký số): Giúp xác thực danh tính nhà phát triển. Mọi ứng dụng Android đều phải được ký số khi phát hành."
             android:textSize="15sp"
             android:layout_marginBottom="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="153dp"
+            android:src="@drawable/digital"/>
 
         <TextView
             android:text="• Tamper Detection (Phát hiện sửa đổi): Kiểm tra tính toàn vẹn của ứng dụng để phát hiện các thay đổi trái phép."
