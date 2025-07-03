@@ -1,13 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.vande.VandeFragment">
+    android:padding="16dp">
 
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Các phương pháp bảo mật trong phát triển ứng dụng Android"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:text="Hệ điều hành Android đã có rất nhiều tính năng bảo mật tích hợp, chẳng hạn như sandboxing, bảo vệ chống lại đệm và tràn số nguyên..." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Sử dụng nội bộ lưu trữ cho dữ liệu nhạy cảm"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mỗi ứng dụng Android có một thư mục lưu trữ nội bộ liên kết với nó... được tạo với chế độ MODE_PRIVATE nên không thể bị truy cập bởi ứng dụng khác..." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Mã hóa dữ liệu trên bộ nhớ ngoài"
+            android:layout_marginTop="16dp" />
+
+        <!-- Tiếp tục thêm các đoạn như trên cho từng tiêu đề và nội dung tương ứng -->
+
+    </LinearLayout>
+</ScrollView>
